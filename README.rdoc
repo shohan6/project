@@ -2,4 +2,14 @@
 
 Authentication is perhaps the single most common requirement of any application. Being able to quickly and easily register for or log into a service can make a huge difference for the user experience. In a traditional web application, this is usually done using server-side session tracking in one form or another. Static applications can keep track of sessions, too, but running in an untrusted client-side environment means that extra care must be taken to ensure that a user is verified and trustworthy. 
 Today, an increasingly common scenario is single sign-on (SSO), in which the credentials established for one site (the provider) can be used to sign in to other sites that are administratively unrelated to it. Third-party authentication enables SSO by allowing a SaaS app to request that the user authenticate himself via a third-party provider. Once he has done so, the provider sends a token to the requesting app proving that the user authenticated himself correctly and possibly encoding additional privileges the user grants to the requesting app. 
-The most of the work (almost 90%) done with 3rd party authentication system, we can find that with a new user entity each time the user signs in with a different OAuth provider which is very confusing and a single user may have multiple entity in the system [1][2][3]. In this Project, we develop a simple Authentications system, allowing the users to link third party and link those account as a single user for future login. For example, if a user has previously logged in like Facebook and subsequently logs in like Google, the user would be able to “link” the two accounts so that in the future logging in with either one will authenticate his as the same principal.
+The most of the work (almost 90%) done with 3rd party authentication system, we can find that with a new user entity each time the user signs in with a different OAuth provider which is very confusing and a single user may have multiple entity in the system. In this Project, we develop a simple Authentications system, allowing the users to link third party and link those account as a single user for future login. For example, if a user has previously logged in like Facebook and subsequently logs in like Google, the user would be able to “link” the two accounts so that in the future logging in with either one will authenticate his as the same principal.
+
+== Objectives
+
+This project aim is to develop User Management with 3rd party Account and linking these accounts for future login. In this project our objectives are:
+•	To develop a user model and an authorizations model. It may have one or more table and may have to make relationship between them.
+•	To able to link multiple third party account.
+•	With the knowledge of Ruby and Rail the website will be featured as: Home page, Navigation bar, Login, Logout, Show user profile, List of users.
+•	Finally, deploy the application to Heroku.
+
+
